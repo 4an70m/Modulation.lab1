@@ -5,6 +5,9 @@
  */
 package modulation.lab1.automat.scene;
 
+import modulation.lab1.automat.cell.Cell;
+import modulation.lab1.automat.processor.CellGeneration;
+
 /**
  *
  * @author Admin
@@ -12,7 +15,11 @@ package modulation.lab1.automat.scene;
 public class Scene extends javafx.scene.canvas.Canvas{
     
     public void drawCellGeneration (CellGeneration generation) {
-        
+        for (int i = 0; i < generation.getLenght(); i++) {
+            for (int j = 0; j < generation.getWidth(); j++) {
+                Cell drawingCell = generation.getGeneration()[i][j];
+            }
+        }
     }
     
 }

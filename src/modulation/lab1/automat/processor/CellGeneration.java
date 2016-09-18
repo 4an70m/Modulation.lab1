@@ -54,31 +54,30 @@ public class CellGeneration {
     
     protected Cell[] processCell(Cell curCell) {
         Cell[] result = new Cell[SURROUNDING_CELLS_DEPTH * SURROUNDING_CELLS_DEPTH];
-
+        Cell[] surroundingCells = this.getSurroundingCells(curCell);
         
-        
+        if (!(curCell instanceof ActableCell)) {
+            return surroundingCells;
+        }
+        ActableCell actableCell = (ActableCell) curCell;
+        result = actableCell.act(surroundingCells);
         return result;
     }
-    
+
     protected Cell[] getSurroundingCells (Cell curCell) {
         Cell[] result = new Cell[SURROUNDING_CELLS_DEPTH * SURROUNDING_CELLS_DEPTH];
         int x = curCell.getPosition().getX();
         int y = curCell.getPosition().getY();
         
-        for (int i = x - SURROUNDING_CELLS_DEPTH / 2; i < x + SURROUNDING_CELLS_DEPTH / 2; i++) {
-            for (int j = y - SURROUNDING_CELLS_DEPTH / 2; j < y + SURROUNDING_CELLS_DEPTH / 2; j++) {
-                Cell cellToProcess = this.generation[i][j];
-                if (cellToProcess instanceof ActableCell) {
-                    ActableCell actableCell = (ActableCell) cellToProcess;
-                    actableCell.act(result);
-                } else {
-                    continue;
-                }
-                if (i == x && j == y) {
-                    
-                }
+        for (int i = 0; i < x; i++) {
+            for (int j = 0; j < y; j++) {
+                int offsetX = i - SURROUNDING_CELLS_DEPTH / 2;
+                int offsetY = j - SURROUNDING_CELLS_DEPTH / 2;
+                int resultIndex = (i + 1) * j;
+                result[resultIndex] = this.generation[offsetX][offsetY];
             }
         }
+        return result;
     }
     
     public void setGeneration(Cell[][] generation) {
@@ -88,5 +87,14 @@ public class CellGeneration {
     public Cell[][] getGeneration() {
         return generation;
     }
+
+    public int getLenght() {
+        return lenght;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+    
     
 }
