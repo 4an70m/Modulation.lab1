@@ -14,6 +14,11 @@ import javafx.fxml.Initializable;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.chart.LineChart;
 import javafx.scene.control.Slider;
+import javafx.scene.paint.Color;
+import modulation.lab1.automat.cell.Cell;
+import modulation.lab1.automat.cell.types.flammable.TreeCell;
+import modulation.lab1.automat.processor.CellGeneration;
+import modulation.lab1.automat.scene.CellCanvas;
 
 /**
  *
@@ -39,6 +44,16 @@ public class FXMLDocumentController implements Initializable {
                 System.out.println("Kek " + newValue.intValue());
             }
         }) ;
+        
+        CellCanvas cc = new CellCanvas(canvas);
+        
+        Cell[][] gen = new Cell[200][200];
+        for (int i = 0; i < 200; i++) {
+            for (int j = 0; j < 200; j++) {
+                gen[i][j] = new TreeCell(i, j);
+            }
+        }
+        cc.drawCellGeneration(new CellGeneration(gen));
     }    
     
 }

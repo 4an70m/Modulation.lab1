@@ -5,6 +5,7 @@
  */
 package modulation.lab1.automat.processor;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,6 +14,24 @@ import java.util.List;
  */
 public class CellGenerationTimeline {
     
-    List<CellGeneration> calculatedGenerations;
+    public static final Integer NUM_OF_ITERATIONS = 100;
+    private final List<CellGeneration> calculatedGenerations;
+    
+    public CellGenerationTimeline(CellGeneration initialGeneration) {
+       this.calculatedGenerations = new ArrayList<>();
+       this.calculatedGenerations.add(initialGeneration);
+    }
+    
+    public void calculateTimelines() {
+        for (int i = 0; i < NUM_OF_ITERATIONS; i++) {
+            CellGeneration currentCellGeneration = this.calculatedGenerations.get(i);
+            CellGeneration nextGeneration = currentCellGeneration.calculateGeneration();
+            this.calculatedGenerations.add(nextGeneration);
+        }
+    }
+    
+    public CellGeneration get(Integer i) {
+        return this.calculatedGenerations.get(i);
+    }
     
 }

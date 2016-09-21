@@ -46,9 +46,12 @@ public class CellGeneration {
                 
                 Cell curCell = this.generation[i][j];
                 Cell[] newCellsState = this.processCell(curCell);
-                
+                for(Cell cell : newCellsState) {
+                    newGeneration[cell.getPosition().getX()][cell.getPosition().getY()] = cell;
+                }
             }
         }
+        result.setGeneration(newGeneration);
         return result;
     }
     
@@ -81,6 +84,11 @@ public class CellGeneration {
     }
     
     public void setGeneration(Cell[][] generation) {
+        this.lenght = generation.length;
+        this.width = 0;
+        if (generation[0] != null) {
+            this.width = generation[0].length;
+        }
         this.generation = generation;
     }
 

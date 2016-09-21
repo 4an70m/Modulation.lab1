@@ -21,7 +21,7 @@
                      <StackPane.margin>
                         <Insets bottom="5.0" />
                      </StackPane.margin></Slider>
-                  <Canvas height="480.0" width="640.0" StackPane.alignment="TOP_CENTER">
+                  <Canvas fx:id="canvas" height="480.0" width="640.0" StackPane.alignment="TOP_CENTER">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor></Canvas>
