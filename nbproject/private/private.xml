@@ -3,13 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group name="5-1">
-            <file>file:/C:/Users/Admin.4an70m/Documents/NetBeansProjects/Modulation.lab1/src/modulation/lab1/ModulationLab1.java</file>
-            <file>file:/C:/Users/Admin.4an70m/Documents/NetBeansProjects/Modulation.lab1/src/modulation/lab1/FXMLDocumentController.java</file>
-            <file>file:/C:/Users/Admin.4an70m/Documents/NetBeansProjects/Modulation.lab1/src/modulation/lab1/automat/scene/CellCanvas.java</file>
-            <file>file:/C:/Users/Admin.4an70m/Documents/NetBeansProjects/Modulation.lab1/src/modulation/lab1/automat/processor/CellGenerationTimeline.java</file>
-            <file>file:/C:/Users/Admin.4an70m/Documents/NetBeansProjects/Modulation.lab1/src/modulation/lab1/automat/processor/CellGeneration.java</file>
-            <file>file:/C:/Users/Admin.4an70m/Documents/NetBeansProjects/Modulation.lab1/src/modulation/lab1/MapJson.json</file>
+            <file>file:/C:/Users/Admin.4an70m/Documents/NetBeansProjects/Modulation.lab1/src/modulation/lab1/automat/generation/CellGeneration.java</file>
+            <file>file:/C:/Users/Admin.4an70m/Documents/NetBeansProjects/Modulation.lab1/src/modulation/lab1/automat/generation/CellGenerationTimeline.java</file>
+            <file>file:/C:/Users/Admin.4an70m/Documents/NetBeansProjects/Modulation.lab1/src/modulation/lab1/automat/cell/types/fireproof/DeadCell.java</file>
+            <file>file:/C:/Users/Admin.4an70m/Documents/NetBeansProjects/Modulation.lab1/src/modulation/lab1/automat/cell/types/fireproof/BurningCell.java</file>
             <file>file:/C:/Users/Admin.4an70m/Documents/NetBeansProjects/Modulation.lab1/src/modulation/lab1/automat/cell/types/flammable/TreeCell.java</file>
+            <file>file:/C:/Users/Admin.4an70m/Documents/NetBeansProjects/Modulation.lab1/src/modulation/lab1/automat/cell/types/ActableCell.java</file>
         </group>
     </open-files>
 </project-private>

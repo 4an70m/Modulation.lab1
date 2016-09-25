@@ -5,12 +5,21 @@
  */
 package modulation.lab1.automat.cell.types.fireproof;
 
-import modulation.lab1.automat.cell.types.FireproofCell;
-import modulation.lab1.automat.cell.Cell;
+import javafx.scene.paint.Color;
+import javax.swing.text.Position;
+import modulation.lab1.automat.util.Position2D;
 
 /**
  *
  * @author Admin
  */
-public class LakeCell extends FireproofCell{    
+public class LakeCell extends FireproofCell{
+    
+    public LakeCell (Position2D position) {
+        this.color = Color.LIGHTBLUE;
+        this.price = 0.0;
+        this.type = LakeCell.class.getSimpleName();
+        this.position = position;
+    }
+    
 }

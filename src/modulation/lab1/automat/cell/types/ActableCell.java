@@ -5,6 +5,7 @@
  */
 package modulation.lab1.automat.cell.types;
 
+import java.util.List;
 import modulation.lab1.automat.cell.Cell;
 
 /**
@@ -13,7 +14,5 @@ import modulation.lab1.automat.cell.Cell;
  */
 public interface ActableCell {
     
-    public Cell changeState(Cell actor);
-    public Cell[] act(Cell[] suroundingCells);
-    
+    public Cell changeState(Cell actor);    
 }

@@ -7,9 +7,8 @@ package modulation.lab1.automat.scene;
 
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
-import javafx.scene.paint.Color;
 import modulation.lab1.automat.cell.Cell;
-import modulation.lab1.automat.processor.CellGeneration;
+import modulation.lab1.automat.generation.CellGeneration;
 
 /**
  *

@@ -5,7 +5,7 @@
  */
 package modulation.lab1.automat.cell.types.flammable;
 
-import modulation.lab1.automat.cell.types.FlammableCell;
+import java.util.List;
 import javafx.scene.paint.Color;
 import modulation.lab1.automat.cell.types.ActableCell;
 import modulation.lab1.automat.cell.types.fireproof.BurningCell;
@@ -40,14 +40,9 @@ public class TreeCell extends FlammableCell implements ActableCell{
         }
         return this;
     }
-
+    
     @Override
-    public Cell[] act(Cell[] suroundingCells) {
-        return suroundingCells;
+    public String toString() {
+        return "T";
     }
-
-    
-
-    
-    
 }

@@ -41,6 +41,9 @@ public abstract class Cell {
     public Color getColor() {
         return color;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return type;
+    }
 }
