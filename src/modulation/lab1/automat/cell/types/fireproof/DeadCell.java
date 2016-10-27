@@ -16,7 +16,7 @@ public class DeadCell extends FireproofCell {
     
     public DeadCell (Cell origin) {
         this.color = Color.BLACK;
-        this.price = 0.0;
+        this.price = origin.getPrice();
         this.type = DeadCell.class.getSimpleName();
         this.position = origin.getPosition();
     }

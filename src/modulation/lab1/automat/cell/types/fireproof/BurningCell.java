@@ -20,7 +20,7 @@ public class BurningCell extends FireproofCell implements ActableCell, ActingCel
 
     public BurningCell(Cell origin) {
         this.color = Color.RED;
-        this.price = 0.0;
+        this.price = origin.getPrice();
         this.position = origin.getPosition();
         this.type = BurningCell.class.getSimpleName();
     }

@@ -5,7 +5,6 @@
  */
 package modulation.lab1.automat.cell.types;
 
-import java.util.List;
 import modulation.lab1.automat.cell.Cell;
 
 /**

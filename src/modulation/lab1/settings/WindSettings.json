@@ -1,0 +1,62 @@
+[
+    {
+        "variant"   : 1,
+        "direction" : "SW",
+        "time"      : 0.5,
+        "speed"     : 0.5
+    },
+    {
+        "variant"   : 2,
+        "direction" : "W",
+        "time"      : 1,
+        "speed"     : 1
+    },
+    {
+        "variant"   : 3,
+        "direction" : "E",
+        "time"      : 0.5,
+        "speed"     : 0.5
+    },
+    {
+        "variant"   : 4,
+        "direction" : "NE",
+        "time"      : 2,
+        "speed"     : 1
+    },
+    {
+        "variant"   : 5,
+        "direction" : "NW",
+        "time"      : 2.5,
+        "speed"     : 0.5
+    },
+    {
+        "variant"   : 6,
+        "direction" : "N",
+        "time"      : 1,
+        "speed"     : 0.5
+    },
+    {
+        "variant"   : 7,
+        "direction" : "SW",
+        "time"      : 2,
+        "speed"     : 0.5
+    },
+    {
+        "variant"   : 8,
+        "direction" : "S",
+        "time"      : 1,
+        "speed"     : 0.5
+    },
+    {
+        "variant"   : 9,
+        "direction" : "NW",
+        "time"      : 0.5,
+        "speed"     : 1
+    },
+    {
+        "variant"   : 10,
+        "direction" : "E",
+        "time"      : 1,
+        "speed"     : 1
+    }
+]
